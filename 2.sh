@@ -14,7 +14,7 @@ export PROJECT_ID=$(gcloud info --format='value(config.project)')
 
 cd thumbnail-nodejs/ 
 
-gcloud functions deploy thumbnail --region=us-east1 --trigger-bucket=gs://$PROJECT_ID --runtime=nodejs8 --entry-point=thumbnail  --quiet
+gcloud functions deploy thumbnail --region=us-east1 --trigger-bucket=gs://$PROJECT_ID --runtime=nodejs10 --entry-point=thumbnail  --quiet
 
 cd ..
 gsutil cp map.jpg gs://$PROJECT_ID/

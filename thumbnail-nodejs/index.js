@@ -1,3 +1,6 @@
+/* globals exports, require */
+//jshint strict: false
+//jshint esversion: 6
 "use strict";
 const crc32 = require("fast-crc32c");
 const gcs = require("@google-cloud/storage")();
